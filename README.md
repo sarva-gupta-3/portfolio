@@ -2,7 +2,7 @@
 
 > Full-stack developer · AI builder · CS graduate student at Arizona State University
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-Visit-7c6dfa?style=flat-square&logo=vercel)](https://your-vercel-url.vercel.app)
+[![Live Site](https://img.shields.io/badge/Live%20Site-Visit-7c6dfa?style=flat-square&logo=vercel)](https://sarva-gupta-portfolio.vercel.app)
 [![ASU](https://img.shields.io/badge/ASU-MS%20Computer%20Science-8C1D40?style=flat-square)](https://engineering.asu.edu)
 
 ---
