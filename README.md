@@ -89,8 +89,8 @@ Human activity recognition model using geophone sensor data. Compared Logistic R
 
 ## Contact
 
-- **Email:** your@email.com
-- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+- **Email:** sarva.gupta.3@gmail.com
+- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/sarva-gupta-42826b256/)
 - **GitHub:** [github.com/yourhandle](https://github.com/yourhandle)
 
 ---
