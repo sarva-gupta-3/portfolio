@@ -90,6 +90,15 @@
   .skill-chip:hover{background:var(--surface2);border-color:var(--accent);color:var(--text);transform:translateY(-2px)}
   .skill-chip.featured{border-color:rgba(124,109,250,0.4);color:var(--accent2);background:rgba(124,109,250,0.08)}
 
+  /* LANGUAGES */
+
+  .lang-block{margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border2)}
+  .lang-label{font-size:0.75rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent2);margin-bottom:1rem}
+  .lang-list{display:flex;gap:2rem;flex-wrap:wrap}
+  .lang-item{display:flex;flex-direction:column;gap:0.2rem}
+  .lang-name{font-size:0.95rem;font-weight:500;color:var(--text)}
+  .lang-level{font-size:0.8rem;color:var(--text3);font-style:italic}
+  
   /* EXPERIENCE */
   .exp-list{display:flex;flex-direction:column}
   .exp-item{display:grid;grid-template-columns:180px 1fr;gap:2rem;padding:2.5rem 0;border-bottom:1px solid var(--border2)}
@@ -265,6 +274,25 @@
     <div class="skill-chip fade-in">Render</div>
     <div class="skill-chip fade-in">UI/UX Design</div>
   </div>
+
+  <div class="lang-block fade-in">
+    <div class="lang-label">Languages</div>
+    <div class="lang-list">
+      <div class="lang-item">
+        <span class="lang-name">English</span>
+        <span class="lang-level">Native</span>
+      </div>
+      <div class="lang-item">
+        <span class="lang-name">Hindi</span>
+        <span class="lang-level">Native</span>
+      </div>
+      <div class="lang-item">
+        <span class="lang-name">French</span>
+        <span class="lang-level">Professional Working Proficiency</span>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <div class="divider"></div>
