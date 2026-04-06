@@ -165,27 +165,8 @@
 
   .bg-glow{position:fixed;top:-30vh;left:-20vw;width:70vw;height:70vh;background:radial-gradient(ellipse,rgba(124,109,250,0.07) 0%,transparent 70%);pointer-events:none;z-index:0}
   .bg-glow2{position:fixed;bottom:-20vh;right:-10vw;width:50vw;height:50vh;background:radial-gradient(ellipse,rgba(79,209,197,0.05) 0%,transparent 70%);pointer-events:none;z-index:0}
-  /*section,nav,footer{position:relative;z-index:1}*/
-  section,nav:not(#sideNav),footer{position:relative;z-index:1}
+  section,nav,footer{position:relative;z-index:1}
 
-    /* LEFT SIDEBAR NAV */
-  #side-nav{position:fixed;left:1.25rem;top:50%;transform:translateY(-50%);z-index:99;display:flex;flex-direction:column;gap:1.1rem;opacity:0;pointer-events:none;transition:opacity 0.35s ease;background:none;border:none;padding:0;margin:0;height:auto;width:auto;justify-content:initial}
-  #side-nav.visible{opacity:1;pointer-events:all}
-  .side-nav-item{display:flex;align-items:center;gap:0.65rem;cursor:pointer;text-decoration:none}
-  .side-nav-dot{width:6px;height:6px;border-radius:50%;background:var(--text3);transition:all 0.2s;flex-shrink:0}
-  .side-nav-item:hover .side-nav-dot,.side-nav-item.active .side-nav-dot{background:var(--accent2);transform:scale(1.5)}
-  .side-nav-item.active .side-nav-dot{background:var(--accent2);box-shadow:0 0 6px rgba(165,148,255,0.5)}
-  .side-nav-label{font-size:0.72rem;color:var(--text3);letter-spacing:0.08em;text-transform:uppercase;opacity:0;transform:translateX(-6px);transition:all 0.2s;white-space:nowrap}
-  .side-nav-item:hover .side-nav-label,.side-nav-item.active .side-nav-label{opacity:1;transform:translateX(0);color:var(--text)}
-
-  /* BACK TO TOP */
-  .back-to-top{position:fixed;bottom:2rem;right:2rem;z-index:99;display:flex;align-items:center;gap:0.5rem;font-size:0.72rem;color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;opacity:0;pointer-events:none;transition:opacity 0.35s ease,color 0.2s;cursor:pointer;background:none;border:none;font-family:'DM Sans',sans-serif}
-  .back-to-top.visible{opacity:1;pointer-events:all}
-  .back-to-top:hover{color:var(--accent2)}
-  .back-to-top-arrow{display:flex;flex-direction:column;align-items:center;gap:2px}
-  .back-to-top-arrow span{display:block;width:7px;height:7px;border-left:1px solid currentColor;border-top:1px solid currentColor;transform:rotate(45deg)}
-
-  @media(max-width:1300px){#side-nav{display:none}}
   @media(max-width:800px){
     #hero{grid-template-columns:1fr;grid-template-rows:auto auto auto}
     #hero-img{width:120px;height:120px;margin:0 auto}
@@ -200,22 +181,7 @@
 <body>
 <div class="bg-glow"></div>
 <div class="bg-glow2"></div>
-  
-<!--<nav class="side-nav" id="sideNav">-->
-<div class="side-nav" id="sideNav">
-  <a href="#about" class="side-nav-item"><div class="side-nav-dot"></div><span class="side-nav-label">About</span></a>
-  <a href="#skills" class="side-nav-item"><div class="side-nav-dot"></div><span class="side-nav-label">Skills</span></a>
-  <a href="#experience" class="side-nav-item"><div class="side-nav-dot"></div><span class="side-nav-label">Experience</span></a>
-  <a href="#projects" class="side-nav-item"><div class="side-nav-dot"></div><span class="side-nav-label">Projects</span></a>
-  <a href="#roles" class="side-nav-item"><div class="side-nav-dot"></div><span class="side-nav-label">Involvement</span></a>
-  <a href="#contact" class="side-nav-item"><div class="side-nav-dot"></div><span class="side-nav-label">Contact</span></a>
-</div>
 
-<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-  <div class="back-to-top-arrow"><span></span></div>
-  Return to top
-</button>
-  
 <nav>
   <a href="#hero" class="nav-logo">Sarva Gupta<span>.</span></a>
   <ul class="nav-links">
@@ -572,8 +538,7 @@
 <section id="contact">
   <div class="section-label fade-in">Let's connect</div>
   <div class="section-title fade-in">Get in touch</div>
-  <!--<a href="mailto:sarva.gupta.3@gmail.com" class="contact-email fade-in">sarva.gupta.3@gmail.com</a>-->
-  <a href="/cdn-cgi/l/email-protection#d7a4b6a5a1b6f9b0a2a7a3b6f9e497b0bab6bebbf9b4b8ba" class="contact-email fade-in"><span class="__cf_email__" data-cfemail="d1a2b0a3a7b0ffb6a4a1a5b0ffe291b6bcb0b8bdffb2bebc">[email&#160;protected]</span></a>
+  <a href="mailto:sarva.gupta.3@gmail.com" class="contact-email fade-in">sarva.gupta.3@gmail.com</a>
   <div class="contact-links fade-in">
     <a href="https://linkedin.com/in/sarva-gupta-42826b256/" class="contact-link" target="_blank">LinkedIn</a>
     <!--<a href="https://github.com/yourhandle" class="contact-link" target="_blank">GitHub</a> -->
@@ -583,32 +548,14 @@
 
 <footer><p>Built with HTML, CSS &amp; JS · &copy; 2025</p></footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
-  const sideNav = document.getElementById('sideNav');
-  const sideItems = document.querySelectorAll('.side-nav-item');
-  const backToTop = document.getElementById('backToTop');
-  const heroSection = document.getElementById('hero');
-
   function updateNav() {
     let cur = '';
     sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
-
-    // Top nav active state
     navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
-
-    // Side nav: show when scrolled past hero, hide when at top
-    const pastHero = window.scrollY > heroSection.offsetHeight - 100;
-    sideNav.classList.toggle('visible', pastHero);
-
-    // Side nav active dots
-    sideItems.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
-
-    // Back to top: show after scrolling 400px
-    backToTop.classList.toggle('visible', window.scrollY > 400);
   }
-
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
